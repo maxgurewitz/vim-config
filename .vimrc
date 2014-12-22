@@ -7,8 +7,10 @@ set splitbelow
 set splitright
 set laststatus=2
 set guioptions-=e
-syntax on
-filetype plugin indent on
 execute pathogen#infect()
+syntax on
+set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
+filetype plugin indent on
 let NERDTreeShowHidden=1
