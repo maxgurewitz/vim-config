@@ -1,8 +1,8 @@
 set number
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set guifont=Monaco:h16
 set splitbelow
 set splitright
@@ -15,4 +15,4 @@ let g:solarized_termcolors=256
 colorscheme solarized
 filetype plugin indent on
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.swp$', '\.swo$']
+let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
