@@ -29,4 +29,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-map \ :NERDTreeToggle<cr>
+nmap [ :tabp<cr>
+nmap ] :tabn<cr>
+nmap \ :tabclose<cr>
+nmap ` :NERDTreeToggle<cr>
