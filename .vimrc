@@ -33,3 +33,5 @@ nmap [ :tabp<cr>
 nmap ] :tabn<cr>
 nmap \ :tabclose<cr>
 nmap ` :NERDTreeToggle<cr>
+nmap <space> :noh<cr>
+vmap vmap <C-c> "+yi
