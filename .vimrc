@@ -1,24 +1,24 @@
 execute pathogen#infect()
-:syntax on
-:set autoindent
-:set expandtab
-:set softtabstop=2
-:set shiftwidth=2
-:set number
-:set ruler
-:set ignorecase
-:set hlsearch
-:set magic
-:set noerrorbells
-:set novisualbell
-:set mat=2
-:set encoding=utf8
-:set nobackup
-:set nowb
-:set noswapfile
-:set laststatus=2
-:set autoread
-:set background=dark 
+syntax on
+set autoindent
+set expandtab
+set softtabstop=2
+set shiftwidth=2
+set number
+set ruler
+set ignorecase
+set hlsearch
+set magic
+set noerrorbells
+set novisualbell
+set mat=2
+set encoding=utf8
+set nobackup
+set nowb
+set noswapfile
+set laststatus=2
+set autoread
+set background=dark 
 set t_Co=256
 let g:solarized_termtrans = 1
 colorscheme solarized 
@@ -34,4 +34,4 @@ nmap ] :tabn<cr>
 nmap \ :tabclose<cr>
 nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
-vmap vmap <C-c> "+yi
+nmap cp :let @" = expand("%")
