@@ -20,6 +20,8 @@ set laststatus=2
 set autoread
 set background=dark 
 set t_Co=256
+set clipboard=unnamed
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:solarized_termtrans = 1
 colorscheme solarized 
 set guicursor+=n-v-c:blinkon0
@@ -28,7 +30,6 @@ filetype plugin indent on
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
 nmap \ :tabclose<cr>
