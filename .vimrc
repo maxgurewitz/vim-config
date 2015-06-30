@@ -20,6 +20,7 @@ set laststatus=2
 set autoread
 set background=dark 
 set t_Co=256
+set scrolloff=15
 set clipboard=unnamed
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:solarized_termtrans = 1
