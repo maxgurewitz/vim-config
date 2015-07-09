@@ -37,3 +37,5 @@ nmap \ :tabclose<cr>
 nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
+nmap ,cl :let @*=expand("%:p")<CR>
+autocmd BufWritePre * :%s/\s\+$//e
