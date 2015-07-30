@@ -67,6 +67,7 @@ let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
 nmap \ :tabclose<cr>
+nmap tn :tabnew<cr>
 nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
