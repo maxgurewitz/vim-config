@@ -1,4 +1,33 @@
-execute pathogen#infect()
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+
+  set runtimepath+=/Users/mgurewitz/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#begin(expand('/Users/mgurewitz/.vim/bundle'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'git@github.com:mileszs/ack.vim.git'
+NeoBundle 'git@github.com:kien/ctrlp.vim.git'
+NeoBundle 'git@github.com:scrooloose/nerdtree.git'
+NeoBundle 'git@github.com:rust-lang/rust.vim.git'
+NeoBundle 'git@github.com:kchmck/vim-coffee-script.git'
+NeoBundle 'git@github.com:altercation/vim-colors-solarized.git'
+NeoBundle 'git@github.com:tpope/vim-commentary.git'
+NeoBundle 'git@github.com:tpope/vim-fugitive.git'
+NeoBundle 'git@github.com:digitaltoad/vim-jade.git'
+NeoBundle 'git@github.com:mustache/vim-mustache-handlebars.git'
+NeoBundle 'git@github.com:cespare/vim-toml.git'
+NeoBundle 'git@github.com:lambdatoast/elm.vim.git'
+
+call neobundle#end()
+filetype plugin indent on
+NeoBundleCheck
+
 syntax on
 set autoindent
 set expandtab
@@ -29,10 +58,10 @@ let g:solarized_termtrans = 1
 colorscheme solarized
 set guicursor+=n-v-c:blinkon0
 set guifont=Monaco:h16
-filetype plugin indent on
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
+
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
 nmap \ :tabclose<cr>
@@ -40,5 +69,7 @@ nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
+
+" Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
 au BufReadPost *.spark set syntax=html
