@@ -18,15 +18,17 @@ set nowb
 set noswapfile
 set laststatus=2
 set autoread
-set background=dark 
+set background=dark
 set t_Co=256
 set scrolloff=15
 set clipboard=unnamed
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.spark set filetype=html
 let g:solarized_termtrans = 1
-colorscheme solarized 
+colorscheme solarized
 set guicursor+=n-v-c:blinkon0
-set guifont=Monaco:h16 
+set guifont=Monaco:h16
 filetype plugin indent on
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let NERDTreeShowHidden=1
@@ -39,3 +41,4 @@ nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
 autocmd BufWritePre * :%s/\s\+$//e
+au BufReadPost *.spark set syntax=html
