@@ -4,10 +4,10 @@ if has('vim_starting')
     set nocompatible
   endif
 
-  set runtimepath+=/Users/mgurewitz/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#begin(expand('/Users/mgurewitz/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
