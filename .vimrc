@@ -1,4 +1,3 @@
-"NeoBundle Scripts-----------------------------
 if has('vim_starting')
   if &compatible
     set nocompatible
@@ -50,17 +49,20 @@ set autoread
 set scrolloff=15
 set clipboard=unnamed
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set guicursor+=n-v-c:blinkon0
+set guifont=Monaco:h16
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.spark set filetype=html
+
 if has("gui_running")
   set background=dark
   set t_Co=256
   let g:solarized_termtrans = 1
   colorscheme solarized
 endif
-set guicursor+=n-v-c:blinkon0
-set guifont=Monaco:h16
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
 
@@ -75,4 +77,3 @@ nmap ,cl :let @*=expand("%:p")<CR>
 
 " Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
-au BufReadPost *.spark set syntax=html
