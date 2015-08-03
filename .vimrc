@@ -52,6 +52,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set guicursor+=n-v-c:blinkon0
 set guifont=Monaco:h16
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set autoread
 
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.spark set filetype=html
