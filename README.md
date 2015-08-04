@@ -3,8 +3,7 @@ vim-config
 
 Personal vim configuration.
 
-Instructions
-____________
+Instructions:
 
 ```
 sh install.sh && sh replace_config.sh
