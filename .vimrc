@@ -22,6 +22,7 @@ NeoBundle 'digitaltoad/vim-jade.git'
 NeoBundle 'mustache/vim-mustache-handlebars.git'
 NeoBundle 'cespare/vim-toml.git'
 NeoBundle 'lambdatoast/elm.vim.git'
+NeoBundle 'othree/yajs.vim'
 
 call neobundle#end()
 filetype plugin indent on
