@@ -22,6 +22,8 @@ NeoBundle 'git@github.com:digitaltoad/vim-jade.git'
 NeoBundle 'git@github.com:mustache/vim-mustache-handlebars.git'
 NeoBundle 'git@github.com:cespare/vim-toml.git'
 NeoBundle 'git@github.com:lambdatoast/elm.vim.git'
+NeoBundle 'git@github.com:othree/yajs.vim.git'
+NeoBundle 'git@github.com:scrooloose/syntastic.git'
 
 call neobundle#end()
 filetype plugin indent on
@@ -75,6 +77,8 @@ nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
+
+inoremap <S-CR> <Esc>
 
 " Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
