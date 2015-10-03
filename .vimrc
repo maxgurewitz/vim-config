@@ -23,6 +23,7 @@ NeoBundle 'mustache/vim-mustache-handlebars.git'
 NeoBundle 'cespare/vim-toml.git'
 NeoBundle 'lambdatoast/elm.vim.git'
 NeoBundle 'othree/yajs.vim'
+NeoBundle 'tpope/vim-surround'
 
 call neobundle#end()
 filetype plugin indent on
@@ -67,6 +68,7 @@ endif
 
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
@@ -76,8 +78,6 @@ nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
-
-inoremap jj <Esc>
 
 " Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
