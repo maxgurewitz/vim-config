@@ -68,7 +68,7 @@ endif
 
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|coverage'
 
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
