@@ -72,6 +72,8 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|coverage'
 
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
+nmap { :bp<cr>
+nmap } :bn<cr>
 nmap \ :tabclose<cr>
 nmap tn :tabnew<cr>
 nmap ` :NERDTreeToggle<cr>
