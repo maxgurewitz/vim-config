@@ -24,6 +24,7 @@ NeoBundle 'cespare/vim-toml.git'
 NeoBundle 'lambdatoast/elm.vim.git'
 NeoBundle 'othree/yajs.vim'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 call neobundle#end()
 filetype plugin indent on
