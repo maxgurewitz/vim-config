@@ -10,6 +10,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'jimmyhchan/dustjs'
 NeoBundle 'mileszs/ack.vim.git'
 NeoBundle 'kien/ctrlp.vim.git'
 NeoBundle 'scrooloose/nerdtree.git'
@@ -84,3 +85,6 @@ nmap ,cl :let @*=expand("%:p")<CR>
 
 " Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Disable syntax highlighting for scss.  Why so slow :(!?
+autocmd Filetype scss setlocal syntax=OFF
