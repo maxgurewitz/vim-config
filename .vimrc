@@ -82,6 +82,7 @@ nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
+nmap ,tf :NERDTreeFind<CR>
 
 " Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
