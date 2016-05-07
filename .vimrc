@@ -57,6 +57,7 @@ set guicursor+=n-v-c:blinkon0
 set guifont=Monaco:h16
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set autoread
+set backupcopy=yes
 
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.spark set filetype=html
@@ -71,6 +72,7 @@ endif
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|coverage'
+let g:elm_format_autosave = 1
 
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
@@ -83,6 +85,7 @@ nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
 nmap ,tf :NERDTreeFind<CR>
+nmap ,fj :execute '%!python -m json.tool'<CR>
 
 " Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
