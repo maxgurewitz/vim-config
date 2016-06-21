@@ -22,7 +22,7 @@ NeoBundle 'tpope/vim-fugitive.git'
 NeoBundle 'digitaltoad/vim-jade.git'
 NeoBundle 'mustache/vim-mustache-handlebars.git'
 NeoBundle 'cespare/vim-toml.git'
-NeoBundle 'lambdatoast/elm.vim.git'
+NeoBundle 'elmcast/elm-vim.git'
 NeoBundle 'othree/yajs.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -52,7 +52,7 @@ set laststatus=2
 set autoread
 set scrolloff=15
 set clipboard=unnamed
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*elm\-stuff*
 set guicursor+=n-v-c:blinkon0
 set guifont=Monaco:h16
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -73,6 +73,8 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|coverage'
 let g:elm_format_autosave = 1
+let g:elm_classic_highlighting = 1
+let mapleader = ","
 
 nmap [ :tabp<cr>
 nmap ] :tabn<cr>
@@ -92,3 +94,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Disable syntax highlighting for scss.  Why so slow :(!?
 autocmd Filetype scss setlocal syntax=OFF
+
+autocmd Filetype elm setlocal ts=4 sts=4 sw=4
