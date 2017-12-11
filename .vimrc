@@ -10,6 +10,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'elixir-editors/vim-elixir'
 NeoBundle 'jimmyhchan/dustjs'
 NeoBundle 'mileszs/ack.vim.git'
 NeoBundle 'kien/ctrlp.vim.git'
@@ -27,6 +28,7 @@ NeoBundle 'othree/yajs.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'lervag/vimtex'
 
 call neobundle#end()
 filetype plugin indent on
@@ -82,7 +84,7 @@ nmap ] :tabn<cr>
 nmap { :bp<cr>
 nmap } :bn<cr>
 nmap \ :tabclose<cr>
-nmap tn :tabnew<cr>
+nmap ,tn :tabnew<cr>
 nmap ` :NERDTreeToggle<cr>
 nmap <space> :noh<cr>
 nmap ,cs :let @*=expand("%")<CR>
