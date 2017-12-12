@@ -29,6 +29,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'lervag/vimtex'
+NeoBundle 'mustache/vim-mustache-handlebars'
 
 call neobundle#end()
 filetype plugin indent on
