@@ -11,6 +11,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'elixir-editors/vim-elixir'
+NeoBundle 'martinda/Jenkinsfile-vim-syntax'
 NeoBundle 'jimmyhchan/dustjs'
 NeoBundle 'mileszs/ack.vim.git'
 NeoBundle 'kien/ctrlp.vim.git'
