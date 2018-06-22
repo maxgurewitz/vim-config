@@ -8,8 +8,9 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-
+NeoBundle 'heavenshell/vim-jsdoc'
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'heavenshell/vim-jsdoc'
 NeoBundle 'elixir-editors/vim-elixir'
 NeoBundle 'martinda/Jenkinsfile-vim-syntax'
 NeoBundle 'jimmyhchan/dustjs'
@@ -93,6 +94,7 @@ nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
 nmap ,tf :NERDTreeFind<CR>
 nmap ,fj :execute '%!python -m json.tool'<CR>
+nmap ,jd :JsDoc<CR>
 
 " Remove whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
